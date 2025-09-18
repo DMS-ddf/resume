@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Резюме - Долгов Михаил Степанович</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="images/resphoto.jpg"
+          alt="Фото Михаила Долгова"
+          class="profile-photo"
+        />
+        <h1>Долгов Михаил Степанович</h1>
+        <p class="subtitle">Начинающий C++ разработчик</p>
+        <div class="contacts">
+          <a href="mailto:dolgov.m.step@gmail.com">
+            <img src="images/mail.png" alt="Email" />
+            dolgov.m.step@gmail.com
+          </a>
+          <a href="https://t.me/ddark_fox" target="_blank">
+            <img src="images/telegram.png" alt="Telegram" />
+            @ddark_fox
+          </a>
+          <a href="tel:+79043575343">
+            <img src="images/phone.png" alt="Phone" />
+            +7 904 357 53 43
+          </a>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="section">
+          <h2>Ключевые навыки</h2>
+          <ul class="skills">
+            <li class="tooltip">
+              <a href="#">C++</a
+              ><span class="tooltiptext"
+                >Владение синтаксисом C++ на уровне, достаточном для решения
+                учебных и алгоритмических задач. Есть практический опыт
+                применения базовых принципов ООП: инкапсуляции, наследования и
+                полиморфизма. Активно использую стандартную библиотеку (STL) для
+                работы с контейнерами и алгоритмами.</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">Алгоритмы и структуры данных</a
+              ><span class="tooltiptext"
+                >Есть теоретическое понимание и практический опыт реализации
+                основных структур данных (массивы, списки, стеки, очереди) и
+                классических алгоритмов (сортировки, бинарный поиск). Знаком с
+                понятием временной сложности и нотацией "O" большое.</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">ООП</a
+              ><span class="tooltiptext"
+                >Понимание трех основных принципов: инкапсуляции, наследования и
+                полиморфизма. Есть практический опыт проектирования простых
+                иерархий классов для решения учебных задач.</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">Рефакторинг кода</a
+              ><span class="tooltiptext"
+                >Знаком с понятием "чистого кода". На учебных проектах есть опыт
+                улучшения структуры кода, повышения его читаемости и устранения
+                дублирования для упрощения дальнейшей поддержки.</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">Linux</a
+              ><span class="tooltiptext"
+                >Базовые навыки работы в командной строке (shell). Умею
+                перемещаться по файловой системе, управлять файлами и
+                процессами, а также редактировать текстовые файлы (например,
+                через `nano` или `vim`).</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">Git</a
+              ><span class="tooltiptext"
+                >Понимаю общую концепцию системы контроля версий. Знаком с
+                базовыми командами, такими как `clone`, `commit`, `push` и
+                `pull` для взаимодействия с удаленными репозиториями (например,
+                на GitHub).</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">SQL</a
+              ><span class="tooltiptext"
+                >Есть начальное представление о реляционных базах данных и языке
+                SQL. Могу составить простой запрос на выборку данных (`SELECT`)
+                с использованием фильтрации (`WHERE`).</span
+              >
+            </li>
+            <li class="tooltip">
+              <a href="#">Python</a
+              ><span class="tooltiptext"
+                >Знакомство с синтаксисом Python. Есть опыт написания небольших
+                скриптов для автоматизации рутинных задач и решения
+                алгоритмических заданий.</span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Образование</h2>
+          <p>
+            Тверской государственный университет, факультет "Математический",
+            специальность "Компьютерная безопасность", 2021–2028
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Обо мне</h2>
+          <p>
+            Мой интерес к IT-сфере зародился в школе благодаря успехам в
+            математике и информатике. Это побудило меня к самостоятельному
+            изучению программирования и созданию практических инструментов,
+            таких как скрипты для автоматизации задач. <br /><br />
+            В настоящее время я ищу возможность начать профессиональную карьеру
+            в качестве C++ разработчика. Моя цель — применить имеющиеся
+            теоретические знания и аналитические способности для решения
+            реальных задач, получить ценный практический опыт и внести свой
+            вклад в проекты компании.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const skills = document.querySelectorAll(".skills .tooltip");
+
+        skills.forEach((skill) => {
+          skill.addEventListener("mouseover", function () {
+            const tooltip = this.querySelector(".tooltiptext");
+
+            tooltip.style.left = "105%";
+            tooltip.style.right = "auto";
+
+            requestAnimationFrame(() => {
+              const rect = tooltip.getBoundingClientRect();
+              const viewportWidth = window.innerWidth;
+
+              if (rect.right > viewportWidth - 15) {
+                tooltip.style.left = "auto";
+                tooltip.style.right = "105%";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
